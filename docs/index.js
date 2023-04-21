@@ -2,12 +2,12 @@
 const btn = document.querySelector(".btn")
 btn.addEventListener('click', async () => {
     console.log('click');
-    const module = await import('./js/createImages.js')
+    const module = await import('../src/js/createImages.js')
     module.addImg()
 })
 // clear images dynamic import
 const clearBtn =  document.querySelector(".clear-btn")
 clearBtn.addEventListener('click', async () => {
-    const { clear } = await import('./js/clear.js')
+    const { clear } = await import('../src/js/clear.js')
     clear()
 })
